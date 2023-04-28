@@ -1,5 +1,5 @@
 const {readFile,writeFile} = require('fs');
-//this is a callback hell
+//this is a callback hell!!!!
 console.log('start');
 //this readFile is async
 readFile('./content/first.txt','utf8',(err,result)=>{
@@ -10,6 +10,7 @@ readFile('./content/first.txt','utf8',(err,result)=>{
     }
 
     const first =result;
+    //read two files are messy
     readFile('./content/second.txt','utf8',(err,result)=>{
         //callback second
         if(err){
